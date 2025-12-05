@@ -27,7 +27,8 @@ class ContaBancaria():
         print(f"{self.saldo:.2f}")
 
     def exibir_info(self):
-        print([{self.titular}] [{self.saldo}] [{self.limite}])
+        print(f"[{self.titular}] [{self.saldo}] [{self.limite}]")
+         
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Gerir Uma Conta Bancária")
