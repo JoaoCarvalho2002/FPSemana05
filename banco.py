@@ -16,9 +16,10 @@ class ContaBancaria():
             print("1")    
             
     def levantar(self,valor):   
-        aux=self.saldo+self.limite
-        if(aux>=valor):
-            self.saldo=self.saldo-valor
+        if (valor<=0):
+            print("0")
+        if (valor <= self.saldo):
+            self.saldo = self.saldo-valor
             print("1")
         else:
             print("0")
